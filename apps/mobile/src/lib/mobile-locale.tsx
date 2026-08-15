@@ -45,7 +45,7 @@ const mobileOnlyTranslations = new Map<string, string>([
   ["此操作会移除这条待同步记录，不会修改服务端笔记。", "This removes the queued local change without modifying the server note."],
   ["丢弃", "Discard"],
   ["正在同步新笔记", "New note is syncing"],
-  ["首次同步完成后即可上传本地图片；图片链接现在就可以直接粘贴到正文。", "Local images can be uploaded after the first sync. Image links can already be pasted into the note."],
+  ["首次同步完成后即可上传本地图片；图片链接现在就可以直接粘贴到正文。", "Local images can be uploaded after the first sync. Image links can already be pasted into[...]
   ["保存更改？", "Save changes?"],
   ["当前笔记有未保存修改。", "This note has unsaved changes."],
   ["放弃修改", "Discard changes"],
@@ -77,6 +77,7 @@ const mobileOnlyTranslations = new Map<string, string>([
   ["最近一次本地编辑器启动", "Latest local editor startup"],
   ["暂不可用", "Unavailable"],
   ["尚未记录", "Not recorded"],
+  ["已加载 {{count1}} / {{count2}} 条笔记", "Loaded {{count1}} of {{count2}} notes"],
 ]);
 
 const flattenStrings = (value: unknown, prefix = "", output = new Map<string, string>()) => {
