@@ -102,7 +102,7 @@ jobs:
             echo "bootstrap_required=${bootstrap_required}"
           } >> "${GITHUB_OUTPUT}"
 
-            - name: Merge upstream update
+      - name: Merge upstream update
         if: steps.upstream.outputs.update_required == 'true'
         env:
           TARGET_COMMIT: ${{ steps.upstream.outputs.target_commit }}
