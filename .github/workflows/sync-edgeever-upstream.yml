@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  workflows: write
   issues: write
 
 concurrency:
@@ -148,5 +149,5 @@ jobs:
           if [ -z "${existing}" ]; then
             gh issue create \
               --title "${title}" \
-              --body "The daily update from \`${UPSTREAM_REPOSITORY}\` (${TARGET_REF}) could not be merged or verified. The current production deployment was left unchanged. Open the failed **Update deployed EdgeEver** workflow run for details, then retry it manually after resolving the problem."
+              --body "The daily update from \`${UPSTREAM_REPOSITORY}\` (${TARGET_REF}) could not be merged or verified. The current production deployment was left unchanged. Open the failed **Update deployed EdgeEver** workflow run for details, then retry it manually after resolving the reported issue."
           fi
